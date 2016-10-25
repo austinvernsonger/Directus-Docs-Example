@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Upgrading &mdash; Directus Docs Example 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Directus Docs Example 1 documentation" href="index.html"/>
+        <link rel="next" title="Hosted" href="GS7-Hosted.html"/>
+        <link rel="prev" title="Your Database" href="GS5-Your-Database.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+  <script src="_static/js/tsorter.min.js"></script>
+  <script src="_static/js/list.js"></script>
+  <script src="_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Directus Docs Example
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GS1-What-is-directus.html">What is Directus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS2-Requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS3-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS4-Settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS5-Your-Database.html">Your Database</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Upgrading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-by-step">Step by Step</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GS7-Hosted.html">Hosted</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Interfaces</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Customer UI&#8217;s</span></p>
+<ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Directus Docs Example</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        <!--  
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Upgrading</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/GS6-Upgrading.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upgrading">
+<h1>Upgrading<a class="headerlink" href="#upgrading" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-by-step">
+<h2>Step by Step<a class="headerlink" href="#step-by-step" title="Permalink to this headline">¶</a></h2>
+<p>Below is the process for manually updating Directus. Directus Hosted
+Instances are automatically updated.</p>
+<ol class="arabic">
+<li><p class="first"><strong>Backup your database</strong>: In addition to scheduled backups, you
+should always create another complete database backup directly before
+making any broad CMS/database changes</p>
+</li>
+<li><p class="first">Download and unzip the newest Directus package from <a class="reference external" href="https://github.com/directus/directus/tree/build">here</a></p>
+</li>
+<li><p class="first">Ensuring you don’t replace your <code class="docutils literal"><span class="pre">/api/config.php</span></code> and
+<code class="docutils literal"><span class="pre">/api/configuration.php</span></code> files, overwrite your previous version of
+Directus with the new files</p>
+</li>
+<li><p class="first">Run the migration script to update your database/schema (&#64;TODO)</p>
+<blockquote>
+<div><p>Developers who installed Directus by cloning the git repository
+directly to their server can simply <code class="docutils literal"><span class="pre">pull</span></code> the newest stable
+version. Typically this is as simple as navigating to the Directus
+folder and running: <code class="docutils literal"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">build</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GS7-Hosted.html" class="btn btn-neutral float-right" title="Hosted" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GS5-Your-Database.html" class="btn btn-neutral" title="Your Database" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Austin Vern Songer.
+
+    </p>
+  </div>
+  Built using Python</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

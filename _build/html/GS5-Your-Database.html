@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Your Database &mdash; Directus Docs Example 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Directus Docs Example 1 documentation" href="index.html"/>
+        <link rel="next" title="Upgrading" href="GS6-Upgrading.html"/>
+        <link rel="prev" title="Settings" href="GS4-Settings.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+  <script src="_static/js/tsorter.min.js"></script>
+  <script src="_static/js/list.js"></script>
+  <script src="_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Directus Docs Example
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GS1-What-is-directus.html">What is Directus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS2-Requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS3-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS4-Settings.html">Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Your Database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#choosing-an-existing-schema">Choosing an Existing Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-customizing-schemas">Creating &amp; Customizing Schemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#table-field-naming">Table &amp; Field Naming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#primary-key">Primary Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#status-field">Status Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sort-field">Sort Field</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GS6-Upgrading.html">Upgrading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS7-Hosted.html">Hosted</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Interfaces</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Customer UI&#8217;s</span></p>
+<ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Directus Docs Example</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        <!--  
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Your Database</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/GS5-Your-Database.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="your-database">
+<h1>Your Database<a class="headerlink" href="#your-database" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="choosing-an-existing-schema">
+<h2>Choosing an Existing Schema<a class="headerlink" href="#choosing-an-existing-schema" title="Permalink to this headline">¶</a></h2>
+<p>If you’re looking to get up and running as quickly or possible, you may
+want to choose from our small but growing library of schema
+boilerplates. Directus will also work with most SQL schemas you find
+elsewhere – though the formatting of some table/field names may be less
+intuitive to users.</p>
+</div>
+<div class="section" id="creating-customizing-schemas">
+<h2>Creating &amp; Customizing Schemas<a class="headerlink" href="#creating-customizing-schemas" title="Permalink to this headline">¶</a></h2>
+<p>Whether you’re adapting a preexisting database or starting from scratch
+– the following guidelines will help you get the most out of Directus.
+Below is an example SQL query for generating a simple table that
+considers these guidelines:</p>
+<div class="code sql highlight-default"><div class="highlight"><pre><span></span>CREATE TABLE `articles` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `active` tinyint(1) unsigned DEFAULT &#39;2&#39;,
+  `sort` int(11) DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `article` text,
+  `publish_date` datetime DEFAULT NULL,
+  `author` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+</pre></div>
+</div>
+</div>
+<div class="section" id="table-field-naming">
+<h2>Table &amp; Field Naming<a class="headerlink" href="#table-field-naming" title="Permalink to this headline">¶</a></h2>
+<p>Directus auto-formats all table and field names for presentation to the
+users, so it’s important to consider your naming system. Beyond that –
+you should make sure that your field names would make sense when
+formatted and read by users.</p>
+<ul class="simple">
+<li>Underscores become spaces</li>
+<li>Each word is capitalized</li>
+<li>Edge-cases are handled by an editable array of overrides</li>
+<li>“_id&#8221; is removed from the end of titles</li>
+<li>Tables prepended with “directus_” are hiden within Directus</li>
+</ul>
+<p><em>Great:</em> * <code class="docutils literal"><span class="pre">publish_date</span></code> becomes “Publish Date” *
+<code class="docutils literal"><span class="pre">employee_number</span></code> becomes “Employee Number” * <code class="docutils literal"><span class="pre">faq_and_support</span></code>
+becomes “FAQ and Support”</p>
+<p><em>Not so great:</em> * <code class="docutils literal"><span class="pre">pubDate</span></code> becomes “Pubdate” * <code class="docutils literal"><span class="pre">EmpNo</span></code> becomes
+“Empno” * <code class="docutils literal"><span class="pre">FaqSupport</span></code> becomes “Faqsupport”</p>
+</div>
+<div class="section" id="primary-key">
+<h2>Primary Key<a class="headerlink" href="#primary-key" title="Permalink to this headline">¶</a></h2>
+<p>Currently Directus requires that every table contains an
+auto-incremented primary key named <code class="docutils literal"><span class="pre">id</span></code>.</p>
+<div class="code sql highlight-default"><div class="highlight"><pre><span></span>`id` int(11) unsigned NOT NULL AUTO_INCREMENT
+
+The abstracting/decoupling of this field name is under development.
+</pre></div>
+</div>
+</div>
+<div class="section" id="status-field">
+<h2>Status Field<a class="headerlink" href="#status-field" title="Permalink to this headline">¶</a></h2>
+<p>If you would like the items of a table to track a “status” state, you
+can easily do that within Directus. A status could be used in many
+different ways, but the most common is: <em>Published</em>, <em>Draft</em>, or
+<em>Deleted</em>, but you could extend or customize this as needed.</p>
+<p>It is important when setting up an app to honor any Status states used
+by Directus. Typically this means only showing active/published content.
+Assuming you are using the default Status options, that would mean
+limiting all SQL queries to:</p>
+<div class="code sql highlight-default"><div class="highlight"><pre><span></span>AND `active` = &#39;1&#39;
+</pre></div>
+</div>
+<p><a class="reference external" href="/04-developer/02-configuration.md">Learn More</a></p>
+</div>
+<div class="section" id="sort-field">
+<h2>Sort Field<a class="headerlink" href="#sort-field" title="Permalink to this headline">¶</a></h2>
+<p>Adding a <code class="docutils literal"><span class="pre">sort(INT11)</span></code> field to a table turns on Directus’
+drag-and-drop sorting. Items on the Directus listing page will now have
+handles for dragging them into curated orders. When sorted, Directus
+will save ascending integers into the order field, thereby making it
+easy to return results in this order:</p>
+<div class="code sql highlight-default"><div class="highlight"><pre><span></span>ORDER BY `sort` ASC
+
+If a table will likely have many items (), it may be advisable not
+to use the manual sort feature.
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GS6-Upgrading.html" class="btn btn-neutral float-right" title="Upgrading" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GS4-Settings.html" class="btn btn-neutral" title="Settings" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Austin Vern Songer.
+
+    </p>
+  </div>
+  Built using Python</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

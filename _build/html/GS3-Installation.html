@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; Directus Docs Example 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Directus Docs Example 1 documentation" href="index.html"/>
+        <link rel="next" title="Settings" href="GS4-Settings.html"/>
+        <link rel="prev" title="Requirements" href="GS2-Requirements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+  <script src="_static/js/tsorter.min.js"></script>
+  <script src="_static/js/list.js"></script>
+  <script src="_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Directus Docs Example
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GS1-What-is-directus.html">What is Directus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS2-Requirements.html">Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#server-preparation">Server Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-walkthrogh">Installation Walkthrogh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-0-requirements">Step 0 – Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-project-info">Step 1 – Project Info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-database">Step 2 – Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-confirmation">Step 3 – Confirmation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GS4-Settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS5-Your-Database.html">Your Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS6-Upgrading.html">Upgrading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS7-Hosted.html">Hosted</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Interfaces</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Customer UI&#8217;s</span></p>
+<ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Directus Docs Example</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        <!--  
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/GS3-Installation.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="server-preparation">
+<h2>Server Preparation<a class="headerlink" href="#server-preparation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Check that your server meets the <a class="reference external" href="/01-getting-started/02-requirements.md">requirements</a></li>
+<li>Download and unzip the Directus package from <a class="reference external" href="https://github.com/directus/directus/tree/build">here</a></li>
+<li>Create a database and MySQL user with access/modify privileges on
+your server</li>
+</ol>
+<ul class="simple">
+<li>You can also use an existing database, but it’s worth taking a look
+at the typical <a class="reference external" href="/04-developer/06-schema-guide.md">Directus Schema</a></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li>Upload the files to a public directory on your server</li>
+<li>Run the installation script by accessing the URL where you uploaded
+the files</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="installation-walkthrogh">
+<h2>Installation Walkthrogh<a class="headerlink" href="#installation-walkthrogh" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-0-requirements">
+<h3>Step 0 – Requirements<a class="headerlink" href="#step-0-requirements" title="Permalink to this headline">¶</a></h3>
+<p>This pre-installation step will only be shown if the server requirements
+are not met.</p>
+</div>
+<div class="section" id="step-1-project-info">
+<h3>Step 1 – Project Info<a class="headerlink" href="#step-1-project-info" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em>Project Name</em> – The name of this project</li>
+<li><em>Project Path</em> – This should auto-fill, but it’s the path of this
+install</li>
+<li><em>Admin Email</em> – The email address for your first Directus user/admin</li>
+<li><em>Admin Password / Confirm</em> – The password for your first Directus
+user/admin</li>
+</ul>
+</div>
+<div class="section" id="step-2-database">
+<h3>Step 2 – Database<a class="headerlink" href="#step-2-database" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><em>Database Type</em> – The database type to be used. (Only MySQL is
+supported, including MariaDB, Percona Server or equivalent). <em>SQLite
+and PostgreSQL support are under development at the moment</em></li>
+<li><em>Host Name</em> – The database host, typically <code class="docutils literal"><span class="pre">localhost</span></code></li>
+<li><em>Host Port</em> - The database host port</li>
+<li><em>Username</em> – The database user with access and modify privileges</li>
+<li><em>Password</em> – The password for that database user</li>
+<li><em>Database Name</em> – The name of an existing database to be managed</li>
+<li><em>Install Schema</em> – List of optional boilerplate schemas</li>
+</ul>
+</div>
+<div class="section" id="step-3-confirmation">
+<h3>Step 3 – Confirmation<a class="headerlink" href="#step-3-confirmation" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">If the database connection succeeds you’ll be shown an installation
+summary page and given an opportunity to email these details to the
+admin user.</p>
+<blockquote>
+<div><p><strong>Security Note:</strong> Once you have completed the install, make sure to
+delete install folder.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>If you’re having problems with your Directus install, please visit our
+<a class="reference external" href="/05-troubleshooting">troubleshooting section</a>.</p>
+<ul class="simple">
+<li><a class="reference external" href="#">Server error occurred!</a></li>
+<li><a class="reference external" href="/05-troubleshooting">Enable mod_rewrite</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GS4-Settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GS2-Requirements.html" class="btn btn-neutral" title="Requirements" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Austin Vern Songer.
+
+    </p>
+  </div>
+  Built using Python</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

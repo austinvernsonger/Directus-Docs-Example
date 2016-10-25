@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>What is Directus &mdash; Directus Docs Example 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/Sorting_Directions.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Directus Docs Example 1 documentation" href="index.html"/>
+        <link rel="next" title="Requirements" href="GS2-Requirements.html"/>
+        <link rel="prev" title="Directus Documentation &amp; User-Guide" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+  <script src="_static/js/tsorter.min.js"></script>
+  <script src="_static/js/list.js"></script>
+  <script src="_static/js/jquery-2.2.4.min.js"></script>
+
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Directus Docs Example
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">What is Directus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-familiar-problem">A Familiar Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-databases-no-workflow-assumptions">Custom Databases, No Workflow Assumptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#headless-cms">Headless CMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comparison-of-data-content-management-options">Comparison of data/content management options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-about-my-website-app-or-project">What about my website, app, or project?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#or-don-t-connect-anything-at-all">Or don&#8217;t connect anything at all!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-schema-project-management">Example Schema: Project Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GS2-Requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS3-Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS4-Settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS5-Your-Database.html">Your Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS6-Upgrading.html">Upgrading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GS7-Hosted.html">Hosted</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Interfaces</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul class="simple">
+</ul>
+<p class="caption"><span class="caption-text">Customer UI&#8217;s</span></p>
+<ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Directus Docs Example</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        <!--  
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>What is Directus</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/GS1-What-is-directus.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="what-is-directus">
+<h1>What is Directus<a class="headerlink" href="#what-is-directus" title="Permalink to this headline">¶</a></h1>
+<p>Directus is a free and open-source headless CMS for intuitively managing custom-schema database content.</p>
+<hr class="docutils" />
+<div class="section" id="a-familiar-problem">
+<h2>A Familiar Problem<a class="headerlink" href="#a-familiar-problem" title="Permalink to this headline">¶</a></h2>
+<p>As a developer, you&#8217;re probably already managing database content directly through Sequel-Pro, phpMyAdmin, or the command line. These are excellent tools because you get complete control with little setup beyond entering the database credentials. But you would never give that access to clients, designers, or even inexperienced engineers – relationships, validation, media, and security can easily get unwieldy. Not to mention you&#8217;ll either have to build within one of those all-encompassing proprietary CMS designed for blogs, or build a _custom_ CMS from the ground-up.</p>
+</div>
+<div class="section" id="custom-databases-no-workflow-assumptions">
+<h2>Custom Databases, No Workflow Assumptions<a class="headerlink" href="#custom-databases-no-workflow-assumptions" title="Permalink to this headline">¶</a></h2>
+<p>Directus allows developers to build projects with custom, scalable, and decoupled databases. No more proprietary templating systems and plugin piecemealing. Build with whichever technologies are most appropriate and then either connect  directly to the database, via the Directus API, or use one of our SDKs. This makes it perfect for native-apps, web-apps, physical installations, and even projects that span multiple platforms.</p>
+</div>
+<div class="section" id="headless-cms">
+<h2>Headless CMS<a class="headerlink" href="#headless-cms" title="Permalink to this headline">¶</a></h2>
+<p>Once you have a basic database you&#8217;ll likely want to start creating, editing, and managing its content. Directus gives even the most novice users the ability to safely and intuitively manage database content directly. Since it pulls all of its architecture and configuration directly from the schema, there&#8217;s no need for time-consuming setup.</p>
+</div>
+<div class="section" id="comparison-of-data-content-management-options">
+<h2>Comparison of data/content management options<a class="headerlink" href="#comparison-of-data-content-management-options" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="42%" />
+<col width="12%" />
+<col width="15%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Feature</th>
+<th class="head">Directus</th>
+<th class="head">DB Client</th>
+<th class="head">Typical CMS</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Manages existing (custom-schema) databases</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Works for non-website projects</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Allows custom SQL queries</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Granular table/field user permissions</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Intuitive for non-developers</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Interface for relational data</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Interface for files/media</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>Data API</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Free and open-source</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="what-about-my-website-app-or-project">
+<h2>What about my website, app, or project?<a class="headerlink" href="#what-about-my-website-app-or-project" title="Permalink to this headline">¶</a></h2>
+<p>Directus only manages the content in your database, beyond that you can use whatever technologies best fit your project. Not accustomed to so much freedom? Here are three easy ways to connect/access your data:</p>
+<ul class="simple">
+<li><strong>API</strong>: Use the Directus API to add/update/delete records or fetch JSON data</li>
+<li><strong>Directus Library</strong>: Use the directus library of functions to interact with the database</li>
+<li><strong>SQL Queries</strong>: Ignore Directus altogether, connect directly to the database, and use custom SQL queries</li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="or-don-t-connect-anything-at-all">
+<h2>Or don&#8217;t connect anything at all!<a class="headerlink" href="#or-don-t-connect-anything-at-all" title="Permalink to this headline">¶</a></h2>
+<p>With the ability to create and manage any database schema you can dream up, maybe Directus <strong>is</strong> the project. Instead of paying $20/month for a rigid Project Management service, just throw together a quick schema with fields customized to your needs. Now you have a free solution that can easily be extended to accommodate any new info you want to track.</p>
+</div>
+<div class="section" id="example-schema-project-management">
+<h2>Example Schema: Project Management<a class="headerlink" href="#example-schema-project-management" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-txt"><div class="highlight"><pre><span></span>database
+├── projects
+│   ├── id
+│   ├── active
+│   ├── title
+│   ├── description
+│   ├── url
+│   ├── client
+│   ├── date_started
+│   ├── project_manager
+│   └── sow_pdf
+├── clients
+│   ├── id
+│   ├── logo_image
+│   ├── name
+│   ├── hourly_rate
+│   ├── point_of_contact_email
+│   ├── point_of_contact_name
+│   └── point_of_contact_phone
+├── tasks
+│   ├── id
+│   ├── active
+│   ├── sort
+│   ├── title
+│   ├── category
+│   ├── assigned_user
+│   ├── created_by
+│   ├── date_created
+│   └── description
+├── task_categories
+│   ├── id
+│   └── title
+└── project_tasks (junction table)
+    ├── id
+    ├── project_id
+    └── task_id
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GS2-Requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Directus Documentation &amp; User-Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Austin Vern Songer.
+
+    </p>
+  </div>
+  Built using Python</a> | Created By <a href="http://austinvernsonger.com">Austin Vern Songer</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
